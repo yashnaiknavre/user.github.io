@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DBS - General Information Form</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            color: #444;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0 0 20px;
+            text-align: center;
+            color: #5d5d5d;
+        }
+
+        label {
+            display: block;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        input[type=text],
+        input[type=email],
+        input[type=tel],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        input[type=radio] {
+            margin-right: 10px;
+        }
+
+        .btn {
+            background-color: #008080;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .btn[type=submit]:hover {
+            background-color: #005454;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>DBS - General Information Form</h1>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address"></textarea>
+
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+
+            <br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+<br>
+          <button class="btn"> <a href="submit.html">Submit</a></button>
+        </form>
+    </div>
+</body>
+
+</html>
